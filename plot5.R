@@ -13,7 +13,7 @@ vehiclesNEI <- NEI[NEI$SCC %in% vehiclesSCC,]
 td<- vehiclesNEI[vehiclesNEI$fips=="24510",]
 
 ## creating the plot
-png("plot4.png",width=480,height=480,units="px")
+png("plot5.png",width=480,height=480,units="px")
 
 library(ggplot2)
 ggplot(td,aes(factor(year),Emissions)) +
